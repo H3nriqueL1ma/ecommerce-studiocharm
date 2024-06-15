@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+#menu {
+    height: 120px !important;
+    background: none !important;
+    border-bottom: 2px solid #2ED0C0;
+}
+
+#search-form {
+    margin: 0 130px 0 90px
+}
+
+#search {
+    width: 540px;
+    height: 40px;
+    border: 2px solid #2ED0C0;
+    border-radius: 10px;
+}
+
+#submit-search {
+    border: none;
+    color: #2ED0C0;
+    font-size: 18px;
+    margin-left: -55px;
+}
+
+#submit-search:hover {
+    background: none;
+}
+
+#atendimento, #sign-in, #carrinho {
+    color: #181818;
+    font-weight: 500;
+}
+
+#sign-in, #carrinho {
+    margin-left: 20px;
+}
+
+#atendimento i, #sign-in i, #carrinho i {
+    transition: 0.3s !important;
+}
+
+#atendimento p, #sign-in p {
+    transition: 0.3s !important;
+    border-bottom: 2px solid transparent
+}
+
+#atendimento:hover i, #sign-in:hover i, #carrinho:hover i {
+    color: #2ED0C0;
+}
+
+#atendimento:hover p, #sign-in:hover p {
+    border-bottom: 2px solid #2ED0C0
+}
+
+#atendimento p:hover, #sign-in p:hover {
+    border-bottom: 2px solid #2ED0C0;
+}
+
+#atendimento i, #sign-in i, #carrinho i {
+    font-size: 35px;
+}
