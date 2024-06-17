@@ -15,16 +15,22 @@
     <nav id="menu" class="navbar navbar-expand-xl bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="">
+            <img id="logo" src="images/Logo.png" alt="">
           </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex me-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPesquisa" aria-controls="offcanvasPesquisa">
+              <i class="bi bi-search"></i>
+            </button>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPesquisa" aria-controls="offcanvasPesquisa">
-            <i class="bi bi-search"></i>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a id="carrinho" class="navbar-toggler" href="#">
+              <i class="bi bi-basket"></i>
+            </a>
+          </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div id="row-menu" class="row align-items-center justify-content-around">
@@ -83,7 +89,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a id="atendimento" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                  <i class="bi bi-chat-left-text-fill me-3"></i>
+                  <i class="bi bi-chat-left-text-fill me-2"></i>
                   <p class="m-0 canvas-text">Atendimento</p>
                 </a>
               </li>
@@ -93,6 +99,18 @@
                   <p class="m-0 canvas-text">Minha Conta</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a id="meus-pedidos" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                  <i class="bi bi-box-seam-fill me-2"></i>
+                  <p class="m-0 canvas-text">Meus pedidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="favoritos" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                  <i class="bi bi-bag-heart-fill me-2"></i>
+                  <p class="m-0 canvas-text">Favoritos</p>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -100,14 +118,14 @@
     </div>
 
     <!--#################### OFFCANVAS DA PESQUISA ####################-->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasPesquisa" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas offcanvas-start offcanvas-width-pesquisa" data-bs-scroll="true" tabindex="-1" id="offcanvasPesquisa" aria-labelledby="offcanvasMenuLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasPesquisaLabel">Pesquisar</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div id="row-menu" class="row align-items-center justify-content-around">
-          <div id="div-search" class="col-lg-5 column">
+        <div id="row-menu" class="row align-items-center justify-content-center">
+          <div id="div-search" class="column">
             <form id="search-form" class="d-flex align-items-center" role="search">
               <input id="search" class="form-control me-2" type="search" placeholder="O que você procura hoje?" aria-label="Search" autocomplete="off">
               <button id="submit-search" class="btn btn-outline-success" type="submit">
@@ -115,41 +133,19 @@
               </button>
             </form>
           </div>
-
-          <div id="div-items" class="col-lg-6 column column-items-menu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a id="atendimento" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                  <i class="bi bi-chat-left-text-fill me-3"></i>
-                  <p class="m-0">Atendimento</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="sign-in" class="nav-link d-flex align-items-center" href="#">
-                  <i class="bi bi-person-circle me-2"></i>
-                  <p class="m-0">Entrar</p>
-                </a>
-              </li>
-              <li id="carrinho-li" class="nav-item">
-                <a id="carrinho" class="nav-link d-flex align-items-center" href="#">
-                  <i class="bi bi-basket"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
 
     <!--#################### TEXTO E BANNER ####################-->
     <section id="text-banner" class="row m-0 p-3 ps-5">
-      <div class="col-4 d-flex align-items-center">
+      <div class="col-lg-4 d-flex align-items-center">
         <div>
           <h1>Cosméticos</h1>
           <p>Nossa linha de cosméticos é rica em ativos hidratantes, antioxidantes e nutrientes essenciais, oferecendo soluções para todas as suas necessidades de beleza. Desde cremes faciais que promovem a renovação celular até maquiagens que realçam sua beleza natural, nossos produtos garantem resultados visíveis e duradouros.</p>
         </div>
       </div>
-      <div id="img-banner" class="col-8"></div>
+      <div id="img-banner" class="col-lg-8"></div>
     </section>
 
     <!--#################### CATEGORIAS ####################-->
@@ -158,7 +154,7 @@
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 Categoria
               </button>
             </h2>

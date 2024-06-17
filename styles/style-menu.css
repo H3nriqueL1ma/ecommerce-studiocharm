@@ -41,25 +41,21 @@ body {
     font-weight: 500;
 }
 
-#atendimento i, #sign-in i, #carrinho i, #minha-conta i {
+#atendimento i, #sign-in i, #carrinho i, #minha-conta i, #meus-pedidos i, #favoritos i {
     transition: 0.3s !important;
 }
 
-#atendimento p, #sign-in p, #minha-conta p {
+#atendimento p, #sign-in p, #minha-conta p, #meus-pedidos p, #favoritos p {
     transition: 0.3s !important;
     border-bottom: 2px solid transparent
 }
 
-#atendimento:hover i, #sign-in:hover i, #carrinho:hover i, #minha-conta:hover i {
+#atendimento:hover i, #sign-in:hover i, #carrinho:hover i, #minha-conta:hover i, #meus-pedidos:hover i, #favoritos:hover i {
     color: #2ED0C0;
 }
 
-#atendimento:hover p, #sign-in:hover p, #minha-conta:hover p {
+#atendimento:hover p, #sign-in:hover p, #minha-conta:hover p, #meus-pedidos:hover p, #favoritos:hover p {
     border-bottom: 2px solid #2ED0C0
-}
-
-#atendimento p:hover, #sign-in p:hover, #minha-conta p:hover {
-    border-bottom: 2px solid #2ED0C0;
 }
 
 #atendimento i, #sign-in i, #carrinho i {
@@ -81,4 +77,14 @@ body {
 
 .navbar-nav li + li {
     margin-left: 20px;
+}
+
+input[type="text"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.accordion-button {
+    position: static;
 }

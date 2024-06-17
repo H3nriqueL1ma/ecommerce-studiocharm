@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const divSearch = document.querySelector("#div-search");
 const divItems = document.querySelector("#div-items");
 const rowMenu = document.querySelector("#row-menu");
+const navbarLogo = document.querySelector("#logo");
 
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 1245 && window.innerWidth <= 1269) {
@@ -15,6 +16,7 @@ window.addEventListener("resize", () => {
         divSearch.classList.remove("col-lg-5");
         divSearch.classList.add("col-lg-6");
     } else if (window.innerWidth >= 1270) {
+
         rowMenu.classList.remove("justify-content-around");
         rowMenu.classList.add("justify-content-between");
     } else {

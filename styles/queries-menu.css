@@ -17,10 +17,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-    #menu {
-        height: 144px !important;
-    }
-
     #div-items {
         width: 400px;
         padding: 0;
@@ -40,7 +36,7 @@
     }
 
     .nav-item i {
-        font-size: 18px !important;
+        font-size: 19px !important;
     }
 
     .column {
@@ -61,6 +57,10 @@
 
     .offcanvas-width {
         width: 250px !important;
+    }
+
+    .offcanvas-width-pesquisa {
+        width: 360px !important;
     }
 
     .offcanvas-header {
@@ -85,67 +85,70 @@
     }
 
     .canvas-text {
-        font-size: 16px !important;
+        font-size: 15px !important;
         font-weight: 400;
     }
-}
 
-@media screen and (max-width: 799px) {
-    .column + .column {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 759px) {
-    .column {
-        width: 380px;
-    }
-
-    #search {
-        margin: 0 !important;
-        width: 380px;
-    }
-
-    #submit-search {
-        margin-left: -45px;
-    }
-}
-
-
-@media screen and (max-width: 470px) {
     #search-form {
-        justify-content: center;
-        margin-left: -2px !important;
+        width: 322px;
     }
 }
 
-@media screen and (max-width: 414px) {
-    .navbar-brand {
-        padding: 7.5px 0;
+@media screen and (max-width: 991px) {
+    #text-banner {
+        padding-left: 15px !important;
     }
 
+    #text-banner p {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 565px) {
     .navbar-brand img {
         width: 300px;
     }
+
+    #img-banner {
+        background-position: center right !important;
+    }
 }
 
-@media screen and (max-width: 400px) {
-    #search {
-        margin: 0 !important;
-        width: 320px;
-    }
-
-    .navbar-brand {
-        padding: 12px 0;
-    }
-
+@media screen and (max-width: 499px) {
     .navbar-brand img {
-        width: 260px;
+        width: 275px;
     }
 }
 
-@media screen and (max-width: 380px) {
-    .column {
-        width: 350px;
+@media screen and (max-width: 470px) {
+    .navbar-brand img {
+        width: 213px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .navbar-brand img {
+        width: 170px;
+    }
+
+    .offcanvas-backdrop {
+        width: 104vw !important;
+        height: 104vh !important;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    #menu {
+        width: 106vw !important;
+    }
+
+    #text-banner {
+        width: 106vw !important;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .navbar-brand img {
+        width: 160px;
     }
 }
