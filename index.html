@@ -5,27 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Charm</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-menu.css">
+    <link rel="stylesheet" href="styles/queries-menu.css">
+    <link rel="stylesheet" href="styles/style-content.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 </head>
 <body>
-    <nav id="menu" class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--#################### MENU ####################-->
+    <nav id="menu" class="navbar navbar-expand-xl bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images/Logo.png" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <form id="search-form" class="d-flex align-items-center" role="search">
-                <input id="search" class="form-control me-2" type="search" placeholder="O que você procura hoje?" aria-label="Search">
-                <button id="submit-search" class="btn btn-outline-success" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </form>
 
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPesquisa" aria-controls="offcanvasPesquisa">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="row-menu" class="row align-items-center justify-content-around">
+              <div id="div-search" class="col-lg-5 column">
+                <form id="search-form" class="d-flex align-items-center" role="search">
+                  <input id="search" class="form-control me-2" type="search" placeholder="O que você procura hoje?" aria-label="Search" autocomplete="off">
+                  <button id="submit-search" class="btn btn-outline-success" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+  
+              <div id="div-items" class="col-lg-6 column column-items-menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id="atendimento" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                      <i class="bi bi-chat-left-text-fill me-3"></i>
+                      <p class="m-0">Atendimento</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sign-in" class="nav-link d-flex align-items-center" href="#">
+                      <i class="bi bi-person-circle me-2"></i>
+                      <p class="m-0">Entrar</p>
+                    </a>
+                  </li>
+                  <li id="carrinho-li" class="nav-item">
+                    <a id="carrinho" class="nav-link d-flex align-items-center" href="#">
+                      <i class="bi bi-basket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!--#################### OFFCANVAS DO MENU ####################-->
+    <div class="offcanvas offcanvas-start offcanvas-width" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center">
+          <i id="icon-sign-in-canvas" class="bi bi-person-circle me-2"></i>
+          <div id="content-canvas-sign">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Olá, visitante</h5>
+            <a id="sign-in" class="nav-link d-flex align-items-center sign-in-canvas" href="#">
+              <p class="m-0">Entrar</p>
+            </a>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="row-menu" class="row align-items-center justify-content-around">
+          <div id="div-items" class="col-lg-6 column column-items-menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="atendimento" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                  <i class="bi bi-chat-left-text-fill me-3"></i>
+                  <p class="m-0 canvas-text">Atendimento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="minha-conta" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                  <i class="bi bi-person-fill me-2"></i>
+                  <p class="m-0 canvas-text">Minha Conta</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#################### OFFCANVAS DA PESQUISA ####################-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasPesquisa" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasPesquisaLabel">Pesquisar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="row-menu" class="row align-items-center justify-content-around">
+          <div id="div-search" class="col-lg-5 column">
+            <form id="search-form" class="d-flex align-items-center" role="search">
+              <input id="search" class="form-control me-2" type="search" placeholder="O que você procura hoje?" aria-label="Search" autocomplete="off">
+              <button id="submit-search" class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div id="div-items" class="col-lg-6 column column-items-menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a id="atendimento" class="nav-link active d-flex align-items-center" aria-current="page" href="#">
                   <i class="bi bi-chat-left-text-fill me-3"></i>
@@ -38,7 +130,7 @@
                   <p class="m-0">Entrar</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <li id="carrinho-li" class="nav-item">
                 <a id="carrinho" class="nav-link d-flex align-items-center" href="#">
                   <i class="bi bi-basket"></i>
                 </a>
@@ -46,14 +138,76 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+
+    <!--#################### TEXTO E BANNER ####################-->
+    <section id="text-banner" class="row m-0 p-3 ps-5">
+      <div class="col-4 d-flex align-items-center">
+        <div>
+          <h1>Cosméticos</h1>
+          <p>Nossa linha de cosméticos é rica em ativos hidratantes, antioxidantes e nutrientes essenciais, oferecendo soluções para todas as suas necessidades de beleza. Desde cremes faciais que promovem a renovação celular até maquiagens que realçam sua beleza natural, nossos produtos garantem resultados visíveis e duradouros.</p>
+        </div>
+      </div>
+      <div id="img-banner" class="col-8"></div>
+    </section>
+
+    <!--#################### CATEGORIAS ####################-->
+    <section class="row m-0">
+      <div id="categories" class="p-4 m-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Categoria
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Preço
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Indicação
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Marca
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname === "/home") {
-      window.history.replaceState({}, "", "/");
-    }
-  });
-</script>
+<script src="scripts/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

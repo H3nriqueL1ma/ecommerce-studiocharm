@@ -4,21 +4,25 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-#menu {
-    height: 120px !important;
-    background: none !important;
-    border-bottom: 2px solid #2ED0C0;
-}
+/*################## Estilos do MENU ##################*/
 
-#search-form {
-    margin: 0 130px 0 90px
+#menu {
+    width: 100vw;
+    height: 120px !important;
+    background-color: white !important;
+    border-bottom: 2px solid #2ED0C0;
+    position: fixed;
 }
 
 #search {
-    width: 540px;
+    width: 800px;
     height: 40px;
     border: 2px solid #2ED0C0;
     border-radius: 10px;
+}
+
+#search-form {
+    margin: 0 !important;
 }
 
 #submit-search {
@@ -37,31 +41,44 @@ body {
     font-weight: 500;
 }
 
-#sign-in, #carrinho {
-    margin-left: 20px;
-}
-
-#atendimento i, #sign-in i, #carrinho i {
+#atendimento i, #sign-in i, #carrinho i, #minha-conta i {
     transition: 0.3s !important;
 }
 
-#atendimento p, #sign-in p {
+#atendimento p, #sign-in p, #minha-conta p {
     transition: 0.3s !important;
     border-bottom: 2px solid transparent
 }
 
-#atendimento:hover i, #sign-in:hover i, #carrinho:hover i {
+#atendimento:hover i, #sign-in:hover i, #carrinho:hover i, #minha-conta:hover i {
     color: #2ED0C0;
 }
 
-#atendimento:hover p, #sign-in:hover p {
+#atendimento:hover p, #sign-in:hover p, #minha-conta:hover p {
     border-bottom: 2px solid #2ED0C0
 }
 
-#atendimento p:hover, #sign-in p:hover {
+#atendimento p:hover, #sign-in p:hover, #minha-conta p:hover {
     border-bottom: 2px solid #2ED0C0;
 }
 
 #atendimento i, #sign-in i, #carrinho i {
     font-size: 35px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav {
+    margin: 0 20px 0 20px !important;
+    transition: 0.3s;
+}
+
+.navbar-nav li + li {
+    margin-left: 20px;
 }

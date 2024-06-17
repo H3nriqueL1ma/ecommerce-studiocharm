@@ -1,0 +1,52 @@
+/*################## Estilos do BANNER E TEXTO ##################*/
+
+#text-banner {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 140px !important;
+}
+
+#text-banner h1 {
+    color: #181818;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#text-banner p {
+    color: #181818;
+    font-size: 14px;
+    width: 330px;
+}
+
+#img-banner {
+    background: url("../images/banner.png") no-repeat center center;
+    background-size: 868px 454px;
+    height: 300px;
+}
+
+/*################## Estilos das CATEGORIAS ##################*/
+
+#categories {
+    width: 340px;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #2ED0C0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    visibility: hidden;
+}
+
+.accordion {
+    --bs-accordion-border-color: #2ED0C0;
+    --bs-accordion-border-width: 1px;
+}

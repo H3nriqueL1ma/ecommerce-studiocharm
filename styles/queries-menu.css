@@ -1,0 +1,151 @@
+@media screen and (min-width: 1601px) {
+    #search {
+        width: 1100px !important;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    #div-items {
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    #atendimento i, #sign-in i, #carrinho i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #menu {
+        height: 144px !important;
+    }
+
+    #div-items {
+        width: 400px;
+        padding: 0;
+    }
+
+    .nav-item p {
+        font-size: 13px;
+    }
+
+    .nav-item {
+        margin: 0 !important;
+        width: 140px;
+    }
+
+    .nav-item a {
+        text-align: end !important;
+    }
+
+    .nav-item i {
+        font-size: 18px !important;
+    }
+
+    .column {
+        width: 400px;
+    }
+
+    .column-items-menu {
+        width: 360px;
+    }
+
+    #carrinho-li {
+        width: 51px;
+    }
+
+    .bi-chat-left-text-fill {
+        margin-right: 8px !important;
+    }
+
+    .offcanvas-width {
+        width: 250px !important;
+    }
+
+    .offcanvas-header {
+        border-bottom: 2px solid #2ED0C0;
+    }
+
+    #icon-sign-in-canvas {
+        font-size: 35px;
+    }
+    
+    #content-canvas-sign h5 {
+        font-size: 18px;
+    }
+
+    .sign-in-canvas {
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+
+    .sign-in-canvas:hover p {
+        color: #2ED0C0;
+    }
+
+    .canvas-text {
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .column + .column {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .column {
+        width: 380px;
+    }
+
+    #search {
+        margin: 0 !important;
+        width: 380px;
+    }
+
+    #submit-search {
+        margin-left: -45px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    #search-form {
+        justify-content: center;
+        margin-left: -2px !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navbar-brand {
+        padding: 7.5px 0;
+    }
+
+    .navbar-brand img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #search {
+        margin: 0 !important;
+        width: 320px;
+    }
+
+    .navbar-brand {
+        padding: 12px 0;
+    }
+
+    .navbar-brand img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .column {
+        width: 350px;
+    }
+}
