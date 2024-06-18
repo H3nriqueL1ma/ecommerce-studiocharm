@@ -92,15 +92,35 @@
     #search-form {
         width: 322px;
     }
+
+    #salao #text-salao p {
+        max-width: 800px !important;
+    }
+
+    #contato {
+        justify-content: center !important;
+        margin: 0 0 20px;
+    }
 }
 
 @media screen and (max-width: 991px) {
+    #categories {
+        width: 90% !important;
+    }
+
     #text-banner {
         padding-left: 15px !important;
     }
 
     #text-banner p {
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #salao {
+        display: inline !important;
+        margin-bottom: 40px;
     }
 }
 
@@ -112,6 +132,18 @@
     #img-banner {
         background-position: center right !important;
     }
+}
+
+@media screen and (max-width: 525px) {
+    #contato {
+        display: inline !important;
+    }
+
+    #rodapé #contato div + div {
+        margin-left: 0px !important;
+        margin-top: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 499px) {

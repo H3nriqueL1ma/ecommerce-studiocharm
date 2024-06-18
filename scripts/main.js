@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname === "/home") {
-      window.history.replaceState({}, "", "/");
+    if (window.location.pathname !== "/home") {
+      window.location.replace("/home");
     }
 });
 
@@ -25,4 +25,10 @@ window.addEventListener("resize", () => {
         divSearch.classList.remove("col-lg-6");
         divSearch.classList.add("col-lg-5");
     }
-})
+});
+
+const signInButton = document.querySelector("#sign-in");
+
+signInButton.addEventListener("click", () => {
+    location.assign("/sign-in")
+});

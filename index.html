@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style-menu.css">
     <link rel="stylesheet" href="styles/queries-menu.css">
     <link rel="stylesheet" href="styles/style-content.css">
+    <link rel="stylesheet" href="styles/style-rodapé.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 </head>
 <body>
@@ -148,61 +149,148 @@
       <div id="img-banner" class="col-lg-8"></div>
     </section>
 
-    <!--#################### CATEGORIAS ####################-->
-    <section class="row m-0">
-      <div id="categories" class="p-4 m-5">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Categoria
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <!--#################### CATEGORIAS E PRODUTOS ####################-->
+    <section class="row m-0 mt-4">
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div id="categories" class="p-4">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Categoria
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul id="lista-categorias" class="list-unstyled">
+                    <li>
+                      <a>Shampoos e Condicionadores</a>
+                    </li>
+                    <li>
+                      <a>Máscaras e Ativadores</a>
+                    </li>
+                    <li>
+                      <a>Finalizadores e Modeladores</a>
+                    </li>
+                    <li>
+                      <a>Tinturas e Colorações</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Preço
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Preço
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul id="lista-preços" class="list-unstyled">
+                    <li>
+                      <a>Até R$69</a>
+                    </li>
+                    <li>
+                      <a>De R$70 a R$99</a>
+                    </li>
+                    <li>
+                      <a>De R$100 a R$169</a>
+                    </li>
+                    <li>
+                      <a>Acima de R$170</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Indicação
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Marca
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Marca
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul id="lista-marcas" class="list-unstyled">
+                    <li>
+                      <a>Arvensis</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="products" class="col-lg-8 p-4">
+        <div class="card">
+          <div id="image" class="text-center">
+            <img src="images/imagens-teste-produtos/imagem-produto-teste.webp" alt="">
+          </div>
+          <div id="title" class="ps-4 pe-4">
+            <h1>ARVENSIS</h1>
+          </div>
+          <div id="description" class="ps-4 pe-4">
+            <p>Arvensis Tec Liss Shampoo 300ml</p>
+          </div>
+          <div id="price" class="ps-4 pe-4">
+            <div class="d-flex align-items-baseline">
+              <h4>R$ 64,19</h4>
+              <h5>no PIX</h5>
+            </div>
+          </div>
+          <div id="price-details" class="ps-4 pe-4">
+            <p>em até 4x de R$16,04 no cartão</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!--#################### RODAPÉ ####################-->
+    <footer id="rodapé" class="row m-0 justify-content-center">
+      <div id="salao-e-contato" class="d-flex align-items-center justify-content-around">
+        <div class="row">
+          <div id="salao" class="d-flex align-items-center me-5 col-xl-6">
+            <div id="logo">
+              <img src="images/Logo-Mobile.png" alt="">
+            </div>
+            <div id="text-salao">
+              <p class="m-0">Transforme sua beleza no Studio Charm! Aqui, acreditamos que cada pessoa merece se sentir única e especial. Oferecemos uma variedade de serviços personalizados, desde cortes de cabelo e coloração até tratamentos estéticos e de bem-estar.</p>
+            </div>
+          </div>
+  
+          <div id="contato" class="d-flex col-xl-5 align-items-center">
+            <div>
+              <h4 class="m-0">Nosso Whatsapp:</h4>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-whatsapp me-2"></i>
+                <p class="m-0">(11) 2629-1731</p>
+              </div>
+            </div>
+            <div>
+              <h4 class="m-0">Nosso E-mail:</h4>
+              <div class="d-flex align-items-center">
+                <i class="bi bi bi-envelope-fill me-2"></i>
+                <p class="m-0">studiocharmoficial@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pagamento">
+        <div>
+          <h4 class="m-0">Formas de Pagamento:</h4>
+          <div>
+            <img src="images/metodos-pagamento.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 <script src="scripts/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

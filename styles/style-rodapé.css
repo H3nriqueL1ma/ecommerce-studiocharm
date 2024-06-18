@@ -1,0 +1,42 @@
+/*################## Estilos do RODAPÉ ##################*/
+#rodapé {
+    margin-top: 200px !important;
+    border-top: 2px solid #2ED0C0;
+}
+
+#rodapé #salao-e-contato {
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+#rodapé #logo img {
+    width: 210px;
+}
+
+#rodapé #text-salao p {
+    font-size: 14px;
+    max-width: 600px;
+}
+
+#rodapé #contato div + div {
+    margin-left: 50px;
+}
+
+#rodapé #contato h4, #rodapé #pagamento h4 {
+    font-size: 15px;
+}
+
+#rodapé #contato i {
+    color: #2ED0C0;
+    font-size: 18px;
+}
+
+#rodapé #contato p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#rodapé #pagamento {
+    width: 83%;
+    margin-top: 20px;
+}
