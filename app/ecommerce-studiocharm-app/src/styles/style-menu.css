@@ -26,6 +26,7 @@ body {
 }
 
 #submit-search {
+    background: none;
     border: none;
     color: #2ED0C0;
     font-size: 18px;
@@ -62,12 +63,14 @@ body {
     font-size: 35px;
 }
 
-.navbar-toggler {
-    border: none;
+.button-toggler {
+    border: none !important;
+    color: #181818 !important;
 }
 
-.navbar-toggler:focus {
-    box-shadow: none;
+.navbar {
+    --bs-navbar-toggler-transition: none !important;
+    --bs-navbar-toggler-focus-width: none !important;
 }
 
 .navbar-nav {
@@ -75,7 +78,11 @@ body {
     transition: 0.3s;
 }
 
-.navbar-nav li + li {
+.navbar-nav a {
+    text-decoration: none;
+}
+
+.navbar-nav div + div {
     margin-left: 20px;
 }
 

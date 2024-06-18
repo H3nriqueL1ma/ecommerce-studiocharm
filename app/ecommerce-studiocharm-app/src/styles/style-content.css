@@ -18,7 +18,7 @@
 }
 
 #img-banner {
-    background: url("../images/banner.png") no-repeat center center;
+    background: url("banner.png") no-repeat center center;
     background-size: 868px 454px;
     height: 300px;
 }
@@ -64,6 +64,10 @@
     transform: scale(1.2);
 }
 
+.accordion-button {
+    position: inherit !important;
+}
+
 #lista-preços li + li, #lista-categorias li + li, #lista-marcas li + li {
     margin-top: 10px;
 }
@@ -80,7 +84,7 @@
 
 
 /*################## Estilos dos PRODUTOS ##################*/
-.card {
+.card-product {
     position: inherit;
     width: 250px;
     height: 400px;
@@ -89,31 +93,31 @@
     grid-template-rows: 220px 25px 60px 30px 50px;
 }
 
-.card #image img {
+.card-product #image img {
     width: 200px;
 }
 
-.card #title h1 {
+.card-product #title h1 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.card #description p {
+.card-product #description p {
     font-size: 15px;
 }
 
-.card #price h4 {
+.card-product #price h4 {
     font-weight: 700;
 }
 
-.card #price h5 {
+.card-product #price h5 {
     font-weight: 400;
 }
 
-.card #price h4 + h5 {
+.card-product #price h4 + h5 {
     margin-left: 5px;
 }
 
-.card #price-details p {
+.card-product #price-details p {
     font-size: 15px;
 }

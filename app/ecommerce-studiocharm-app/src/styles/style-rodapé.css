@@ -9,6 +9,11 @@
     border-bottom: 1px solid black;
 }
 
+#rodapé #salao {
+    display: flex;
+    align-items: center;
+}
+
 #rodapé #logo img {
     width: 210px;
 }

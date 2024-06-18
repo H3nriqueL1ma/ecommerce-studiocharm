@@ -1,0 +1,44 @@
+#login {
+    padding-top: 200px;
+    max-width: 500px;
+}
+
+#login .input-login + .input-login {
+    margin-top: 15px;
+}
+
+#login .input-login + div {
+    margin-top: 5px;
+}
+
+#login a {
+    color: #2ED0C0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#login input {
+    border: 2px solid #2ED0C0;
+    border-radius: 10px;
+}
+
+#login #senha {
+    width: 395px;
+}
+
+#login #entrar {
+    width: 90px;
+    height: 40px;
+    border: 2px solid #2ED0C0;
+    background-color: #2ED0C0;
+    transition: 0.2s;
+}
+
+#login #entrar:hover {
+    transform: scale(1.05);
+} 
+
+.input-login div + div {
+    margin-left: 15px;
+}
+
