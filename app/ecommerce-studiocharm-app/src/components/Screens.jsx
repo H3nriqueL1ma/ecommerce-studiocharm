@@ -6,6 +6,7 @@ import Rodape from './RodapeEcommerce';
 import '../styles/queries.css';
 import '../styles/style-form-login-cadastro.css';
 import LoginContent from './LoginContent';
+import CadastroContent from './CadastroContent';
 
 export function Home() {
     return (
@@ -26,4 +27,13 @@ export function Login() {
     );
 }
 
-export default { Home }
+export function Cadastro() {
+    return (
+        <>
+            <MenuLoginCadastro />
+            <CadastroContent />
+        </>
+    );
+}
+
+export default { Home, Login, Cadastro }
