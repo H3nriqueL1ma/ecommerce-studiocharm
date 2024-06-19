@@ -11,7 +11,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Menu() {
+export default function MenuMinhaConta() {
     const [showMenuCanvas, setShowMenuCanvas] = useState(false);
     const [showPesquisaCanvas, setShowPesquisaCanvas] = useState(false);
 
@@ -108,7 +108,7 @@ export default function Menu() {
                                     <Nav.Item className="d-flex align-items-center">
                                         <Link id="sign-in" className="d-flex align-items-center" to="/login">
                                             <i class="bi bi-person-circle me-2"></i>
-                                            <p class="m-0">Entrar</p>
+                                            <p class="m-0">Visitante</p>
                                         </Link>
                                     </Nav.Item>
                                     <Nav.Item>

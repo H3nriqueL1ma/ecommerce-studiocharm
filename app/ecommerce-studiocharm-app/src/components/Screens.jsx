@@ -7,6 +7,9 @@ import '../styles/queries.css';
 import '../styles/style-form-login-cadastro.css';
 import LoginContent from './LoginContent';
 import CadastroContent from './CadastroContent';
+import RecuperarSenhaContent from './RecuperarSenhaContent';
+import MenuMinhaConta from './MenuMinhaConta';
+import MinhaContaContent from './MinhaContaContent';
 
 export function Home() {
     return (
@@ -36,4 +39,23 @@ export function Cadastro() {
     );
 }
 
-export default { Home, Login, Cadastro }
+export function RecuperarSenha() {
+    return (
+        <>
+            <MenuLoginCadastro />
+            <RecuperarSenhaContent />
+        </>
+    );
+}
+
+export function MinhaConta() {
+    return (
+        <>
+            <MenuMinhaConta />
+            <MinhaContaContent />
+            <Rodape />
+        </>
+    );
+}
+
+export default { Home, Login, Cadastro, RecuperarSenha }

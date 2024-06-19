@@ -1,6 +1,6 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Cadastro, Home, Login } from './components/Screens';
+import { Cadastro, Home, Login, MinhaConta, RecuperarSenha } from './components/Screens';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,14 @@ const router = createBrowserRouter([
   {
     path: "/cadastro",
     element: <Cadastro />
+  },
+  {
+    path: "/recuperar-senha",
+    element: <RecuperarSenha />
+  },
+  {
+    path: "/minha-conta",
+    element: <MinhaConta />
   }
 ]);
 

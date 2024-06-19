@@ -17,7 +17,7 @@
     font-size: 14px;
 }
 
-#login input {
+#login input, #cadastro input, #cadastro select {
     border: 2px solid #2ED0C0;
     border-radius: 10px;
 }
@@ -34,7 +34,7 @@
     transition: 0.2s;
 }
 
-#login #entrar:hover {
+#login #entrar:hover, #cadastro #cadastrar:hover, #link-recuperar:hover {
     transform: scale(1.05);
 } 
 
@@ -42,3 +42,77 @@
     margin-left: 15px;
 }
 
+#cadastro {
+    max-width: 950px;
+    padding-top: 200px;
+}
+
+#title i {
+    font-size: 24px;
+}
+
+#title h2 {
+    margin-left: 5px !important;
+    font-size: 20px;
+}
+
+#inputs {
+    margin-top: 20px;
+}
+
+#inputs .div-input + .div-input {
+    margin-top: 15px;
+}
+
+#nome-completo, #senha, #confirma-senha, #rua {
+    width: 400px;
+}
+
+#nome-usuário {
+    width: 200px;
+}
+
+#label-celular {
+    margin-left: 32px;
+}
+
+#celular {
+    margin-left: 24px;
+    width: 176px;
+}
+
+#bairro, #cep {
+    width: 141px;
+}
+
+#cidade {
+    margin-left: 24px;
+    width: 118px;
+}
+
+#estado {
+    margin-left: 24px;
+    width: 92px;
+}
+
+#cadastro #cadastrar {
+    margin-top: 32px;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #2ED0C0;
+    background-color: #2ED0C0;
+    transition: 0.2s;
+}
+
+#link-recuperar {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #2ED0C0;
+    background-color: #2ED0C0;
+    transition: 0.2s;
+}
+
+#img {
+    padding-top: 200px;
+}
